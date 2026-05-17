@@ -1,4 +1,4 @@
-Updated: Fixed a typo from my first commit.
+Updated: Fixed a few typos from my first commit.
 
 Note: Please see my email sent on May 17th at (it should be sent before 3AM).
 

@@ -49,12 +49,12 @@ def genre_ratings():
                 genre_name = genre_match[genre_id_int]
                 genre_data.append([genre_name, rating])
 
-    dataframe_2_genres = pd.DataFrame(genre_data, columns=["genres", "vote_average"])
+    dataframe_2 = pd.DataFrame(genre_data, columns=["genres", "vote_average"])
 
-    genre_means = dataframe_2_genres.groupby("genres")["vote_average"].mean().sort_values(ascending=False)
+    genre_means = dataframe_2.groupby("genres")["vote_average"].mean().sort_values(ascending=False)
     print("Mean per genre:\n", genre_means, "\n")
 
-    genre_medians = dataframe_2_genres.groupby("genres")["vote_average"].median().sort_values(ascending=False)
+    genre_medians = dataframe_2.groupby("genres")["vote_average"].median().sort_values(ascending=False)
     print("Median per genre:\n", genre_medians, "\n")
 
     return genre_means, genre_medians
