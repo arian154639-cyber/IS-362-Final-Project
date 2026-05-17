@@ -1,3 +1,5 @@
+Updated: Fixed a typo from my first commit.
+
 Note: Please see my email sent on May 17th at (it should be sent before 3AM).
 
 IMDb Dataset:
@@ -12,7 +14,7 @@ dictionary. Then, genres are paired with ratings, and appended to the list. Last
 dataframe, then group by genres and calculate mean/median and sort values from highest to lowest. 
 
 TMDb Dataset:
-I first loaded the dataset. I converted release year to a datetime object, extracting it into release year while
+I first loaded the dataset. I converted release date to a datetime object, extracting it into release year while
 invalid data is handled by errors=coerce. I then filtered the data to keep only entries from the 1990s. I had to
 do some genre matching because the genre values in the csv were numbers, so I had to go find what genre each number
 meant. After my research, I came back and made a dictionary that matches the numbers to their respective genres.
